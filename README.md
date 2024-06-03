@@ -1,70 +1,35 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dapp
 
-## Available Scripts
+Overview- Dapp is a decentralized application built using React. It leverages Firebase for backend services, Ethers for blockchain interactions, and TailwindCSS for styling. The project includes essential tools and configurations for development and testing to ensure a smooth development experience.
 
-In the project directory, you can run:
+Features-
+•React: For building the user interface.
+•TailwindCSS: For responsive and utility-first CSS styling.
+•Firebase: For backend services.
+•Ethers: For interacting with the Ethereum blockchain.
+•Hardhat: For testing and deploying the smart contract.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Frontend-The frontend of dapp is built using React and TailwindCSS:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React is used for creating the interactive user interface, providing a smooth and dynamic user experience.
+TailwindCSS is used for styling, offering a utility-first approach that enables rapid and responsive design implementation.
+Ethers.js is used for connecting the frontend with the smart contract, enabling blockchain interactions such as product registration and purchase.
 
-### `npm test`
+Smart Contract: SupplyChain-
+The SupplyChain smart contract manages the lifecycle of products on the Ethereum blockchain using ERC721 tokens. Key functionalities include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Registering Products: Users can register new products, which are represented as unique ERC721 tokens.
+Purchasing Products: Users can purchase products by transferring Ether, with ownership and status updates managed by the contract.
+Deleting Products: The contract manager can delete purchased products, ensuring efficient contract state management.
+The contract ensures transparency and traceability of product ownership and status through blockchain technology.
 
-### `npm run build`
+Development-Hardhat is used for testing, deploying, and debugging the smart contract. It provides a robust development environment for Ethereum-based projects.
+Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributions are welcome. Feel free to open issues or submit pull requests.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.

@@ -4,10 +4,10 @@ export default async function purchase(product, api) {
     const { contract, signer, ethers } = api;
     const connectedContract = contract.connect(signer);
 
-    const tx = await connectedContract.purchaseProduct(product.id.toString(), {
+    await connectedContract.purchaseProduct(product.id.toString(), {
       value: (product.price * 1000000000000000000).toString(),
     });
-    console.log(tx);
+
     const ProductPurchasedPromise = new Promise((resolve, reject) => {
       connectedContract.once(
         "ProductPurchased",

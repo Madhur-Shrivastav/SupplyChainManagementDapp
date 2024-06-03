@@ -55,8 +55,8 @@ const RegiterPage = () => {
     setEventError(false);
   }
   return (
-    <main className="min-h-[40rem] flex flex-col p-6 justify-center items-center">
-      <div className="bg-custom-black-1 p-6 rounded-lg flex flex-col items-center justify-center">
+    <main className="min-h-[40rem] flex flex-col p-6 justify-center items-center ">
+      <div className="bg-custom-black-1 p-6 rounded-lg flex flex-col items-center justify-center ">
         <h1 className="text-white text-3xl p-3 mb-6">Register a product</h1>
 
         <form
@@ -97,12 +97,12 @@ const RegiterPage = () => {
     peer-focus:-translate-y-5 
     peer-focus:px-1
     peer-focus:bg-yellow-500
-    peer-focus:text-custom-blue      
+          
     peer-valid:text-sm  
     peer-valid:-translate-y-5
     peer-valid:px-1            
     peer-valid:bg-yellow-500
-    peer-valid:text-custom-blue     
+         
     "
             >
               Product Name
@@ -126,12 +126,12 @@ left-2 top-2
     peer-focus:-translate-y-5 
     peer-focus:px-1
     peer-focus:bg-yellow-500
-    peer-focus:text-custom-blue      
+          
     peer-valid:text-sm  
     peer-valid:-translate-y-5
     peer-valid:px-1            
     peer-valid:bg-yellow-500
-    peer-valid:text-custom-blue     
+         
     "
             >
               Price

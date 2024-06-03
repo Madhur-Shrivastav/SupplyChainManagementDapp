@@ -46,7 +46,7 @@ const Card = ({ product }) => {
           <h1 className="font-semibold whitespace-nowrap truncate w-full">
             Owner: {product.owner}
           </h1>
-          <h1 className="font-semibold whitespace-nowratruncate w-full">
+          <h1 className="font-semibold whitespace-nowrap  truncate w-full">
             Product Name: {product.name}
           </h1>
           <h1 className=" font-semibold whitespace-nowrap truncate w-full">

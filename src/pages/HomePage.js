@@ -20,10 +20,10 @@ const HomePage = () => {
               price: Number(product.price) / 1000000000000000000,
               bought: product.bought,
               imageURL: product.imageURL,
-              purchaseTime: new Date(Number(product.purchaseTime)),
+              purchaseTime: new Date(Number(product.purchaseTime) * 1000),
               statusHistory: product.statusHistory.map((status) => ({
                 status: status.status,
-                timestamp: new Date(Number(status.timestamp)),
+                timestamp: new Date(Number(status.timestamp) * 1000),
               })),
             }));
 
@@ -53,7 +53,7 @@ const HomePage = () => {
           Or search according to your needs....
         </Link>
       </div>
-      <div className="flex flex-wrap gap-5">
+      <div className="flex flex-wrap gap-5 w-full">
         {products.length > 0 &&
           products.map((product, index) => (
             <Card key={index} product={product}></Card>

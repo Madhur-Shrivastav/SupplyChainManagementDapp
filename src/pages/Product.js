@@ -30,14 +30,14 @@ const Product = () => {
               price: Number(Result[3]) / 1000000000000000000,
               bought: Result[4],
               imageURL: Result[5],
-              purchaseDate: new Date(Number(Result[6])),
+              purchaseDate: new Date(Number(Result[6]) * 1000),
             };
             const statusHistory = [];
             for (let i in Result[7]) {
               let result = Result[7][i];
               statusHistory.push({
                 status: result[0],
-                timestamp: new Date(Number(result[1])),
+                timestamp: new Date(Number(result[1]) * 1000),
               });
             }
 
@@ -109,7 +109,7 @@ const Product = () => {
               </h1>
             )}
 
-            <div className="flex sm:w-[50%] mx-auto gap-4">
+            <div className="flex w-full sm:w-[50%] mx-auto gap-4">
               <button
                 className={`text-white bg-custom-black-4 h-[50px] w-[100px] rounded-lg ${
                   !product.bought

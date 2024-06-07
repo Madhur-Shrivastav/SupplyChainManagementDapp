@@ -51,7 +51,6 @@ const SearchPage = () => {
           })
         );
 
-        // Filter products based on search criteria
         const filteredProducts = fetchedProducts.filter((product) => {
           const productDate = new Date(product.statusHistory[0].timestamp);
           const searchDate = new Date(searchData.date);
